@@ -37,7 +37,7 @@ def won?(board)
 end
 
 def full?(board)
-  check = board.select do |index|
+  check = [0..8].select do |index|
     position_taken?(board,index)
   end
 
