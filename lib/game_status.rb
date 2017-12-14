@@ -39,10 +39,9 @@ end
 def full?(board)
   positions=[0,1,2,3,4,5,6,7,8]
   check = positions.select do |index|
-    puts position_taken?(board,index)
     position_taken?(board,index)
   end
-puts check
+
   if !check == nil
     true
   else
