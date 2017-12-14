@@ -35,5 +35,3 @@ def won?(board)
   end
   win
 end
-
-puts won?(board)
