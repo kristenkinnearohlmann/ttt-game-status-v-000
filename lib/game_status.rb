@@ -31,7 +31,7 @@ def won?(board)
     if (position_1 == "X" && position_2 =="X" && position_3 =="X")
       win=win_combination
     else
-      win=[]
+      win=nil
     end
   end
   win
