@@ -1,4 +1,4 @@
-board = [" "," "," ","X","X","X"," "," "," "]
+board = [" "," "," "," "," "," "," "," "," "]
 
 # Helper Method
 def position_taken?(board, index)
@@ -34,5 +34,3 @@ def won?(board)
     end
   end
 end
-
-puts won?(board)
