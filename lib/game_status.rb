@@ -1,4 +1,4 @@
-board = [" ","X"," "," "," "," "," "," "," "]
+board = ["O","X"," "," "," "," "," "," "," "]
 
 # Helper Method
 def position_taken?(board, index)
