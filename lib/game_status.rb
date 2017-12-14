@@ -1,4 +1,4 @@
-board = ["X","X","O","X","X","O","O","O","X"]
+board = [" "," "," "," "," "," "," "," "," "]
 
 # Helper Method
 def position_taken?(board, index)
@@ -38,11 +38,11 @@ end
 
 def full?(board)
   positions=[0,1,2,3,4,5,6,7,8]
-  check = positions.select do |index|
+  checkPositions = positions.select do |index|
     position_taken?(board,index)
   end
 
-  if check.length == 9
+  if checkPositions.length == 9
     true
   else
     false
