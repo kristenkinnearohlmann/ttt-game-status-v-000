@@ -36,3 +36,5 @@ puts win_combination
   end
   win
 end
+
+won?(board)
