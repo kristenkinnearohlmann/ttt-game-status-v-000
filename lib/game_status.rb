@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
-    puts win_combination
+
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
@@ -27,12 +27,12 @@ def won?(board)
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
-puts position_1
-puts position_2
-puts position_3
+
     if (position_1 == "X" && position_2 == "X" && position_3 == "X")
+      puts "True #{win_combination}""
       win_combination
     else
+      puts "False #{win_combination}"
       false
     end
   end
