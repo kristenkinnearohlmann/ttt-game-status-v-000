@@ -55,9 +55,7 @@ def draw?(board)
   # false if board is won
   if (!won?(board) && full?(board))
     true
-  elsif !(won?(board) && full?(board))
-    false
-  elsif (won?(board))
+  elsif (!(won?(board) && full?(board)) || (won?(board)))
     false
   end
 end
