@@ -17,18 +17,18 @@ WIN_COMBINATIONS = [
   [2,4,6] # right diagonal
 ]
 
-def won?()
-  WIN_COMBINATIONS.each do |win_combination|
-    win_index_1 = win_combination[0]
-    win_index_2 = win_combination[1]
-    win_index_3 = win_combination[2]
-
-    position_1 = board(win_index_1)
-    position_2 = board(win_index_2)
-    position_3 = board(win_index_3)
-    puts position_1
-    puts position_2
-    puts position_3
+def won?(board)
+  # WIN_COMBINATIONS.each do |win_combination|
+  #   win_index_1 = win_combination[0]
+  #   win_index_2 = win_combination[1]
+  #   win_index_3 = win_combination[2]
+  # 
+  #   position_1 = board(win_index_1)
+  #   position_2 = board(win_index_2)
+  #   position_3 = board(win_index_3)
+  #   puts position_1
+  #   puts position_2
+  #   puts position_3
   #
   #   if (position_1 == "X" && position_2 =="X" && position_3 =="X")
   #     win_combination
@@ -38,5 +38,4 @@ def won?()
   end
 end
 
-puts board
-won?()
+won?(board)
