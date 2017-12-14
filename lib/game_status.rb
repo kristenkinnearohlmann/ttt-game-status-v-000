@@ -41,7 +41,7 @@ def full?(board)
   check = positions.select do |index|
     position_taken?(board,index)
   end
-
+puts check
   if !check == nil
     true
   else
