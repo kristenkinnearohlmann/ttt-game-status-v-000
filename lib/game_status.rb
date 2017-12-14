@@ -38,4 +38,4 @@ def won?(board)
   end
 end
 
-puts won?(board).to_a
+puts won?(board).to_ary
