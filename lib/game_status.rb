@@ -42,6 +42,7 @@ def full?(board)
     position_taken?(board,index)
   end
 puts check
+puts check.to_a
   if !check == nil
     true
   else
