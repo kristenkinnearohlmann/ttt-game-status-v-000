@@ -28,11 +28,12 @@ def won?(board)
     position_3 = board[win_index_3]
 
     if (position_1 == "X" && position_2 =="X" && position_3 =="X")
-      win_combination
+      win=win_combination
     else
-      false
+      win=false
     end
   end
+  win
 end
 
 puts won?(board)
