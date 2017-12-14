@@ -1,4 +1,4 @@
-board = ["X","X","O","X","X","O","O","O","X"]
+board = [" ","X","O","X","X","O","O","O","X"]
 
 # Helper Method
 def position_taken?(board, index)
@@ -42,7 +42,7 @@ def full?(board)
     position_taken?(board,index)
   end
 puts check
-puts check.to_a
+
   if !check == nil
     true
   else
