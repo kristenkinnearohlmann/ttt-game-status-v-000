@@ -29,7 +29,7 @@ def won?(board)
     position_3 = board[win_index_3]
 
     if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-      puts "True #{win_combination}""
+      puts "True #{win_combination}"
       win_combination
     else
       puts "False #{win_combination}"
@@ -38,4 +38,4 @@ def won?(board)
   end
 end
 
-puts won?(board)
+puts won?(board).to_a
