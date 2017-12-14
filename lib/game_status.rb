@@ -1,4 +1,4 @@
-board = [" "," "," "," "," "," "," "," "," "]
+board = ["X","X","X"," "," "," "," "," "," "]
 
 # Helper Method
 def position_taken?(board, index)
@@ -27,7 +27,7 @@ def won?(board)
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
-puts win_combination
+
     if (position_1 == "X" && position_2 =="X" && position_3 =="X")
       win=win_combination
     else
