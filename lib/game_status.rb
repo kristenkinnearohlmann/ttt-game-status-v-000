@@ -38,4 +38,5 @@ def won?()
   end
 end
 
-won?(board)
+puts board
+won?()
